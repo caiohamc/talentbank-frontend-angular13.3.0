@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="card">
+        <h3 class="text-center">Candidates List</h3>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <!-- GenderEnum gender;
+                    OccupationAreaEnum occupationArea;
+                    LanguageEnum preferredLanguage; -->
+                    <th>Years Of Experience</th>
+                    <th>Gross Salary</th>
+                    <th>Salary Claim</th>
+                    <th>Creation Date</th>
+                    <th>Update Date</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let candidate of candidates">
+                        <td>{{ candidate.id }}</td>
+                        <td>{{ candidate.name }}</td>
+                        <td>{{ candidate.email }}</td>
+                        <td>{{ candidate.phone }}</td>
+                        <td>{{ candidate.yearsOfExperience }}</td>
+                        <td>{{ candidate.grossSalary }}</td>
+                        <td>{{ candidate.salaryClaim }}</td>
+                        <td>{{ candidate.creationDate }}</td>
+                        <td>{{ candidate.updateDate }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
